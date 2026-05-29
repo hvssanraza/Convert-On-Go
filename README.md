@@ -87,7 +87,7 @@ This project is licensed under the MIT License.
 
 ## 👨‍💻 Developer
 
-Made with ❤️ by Hassan Raza
+Made by Hassan Raza
 
 GitHub: https://github.com/hvssanraza
 Website: https://convertongo.com
