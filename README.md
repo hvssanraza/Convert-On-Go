@@ -16,22 +16,22 @@ The goal of ConvertOnGo is to make file conversion seamless for everyone — dir
 
 ## ✨ Features
 
-- ⚡ Fast file conversion
-- 🎨 Clean modern UI
-- 📱 Fully responsive design
-- 🔒 Secure HTTPS connection
-- 📂 Drag & drop upload support
-- 🚀 Lightweight and optimized
-- 🌙 Minimal user experience
+* ⚡ Fast file conversion
+* 🎨 Clean modern UI
+* 📱 Fully responsive design
+* 🔒 Secure HTTPS connection
+* 📂 Drag & drop upload support
+* 🚀 Lightweight and optimized
+* 🌙 Minimal user experience
 
 ---
 
 ## 🛠️ Tech Stack
 
-- HTML5
-- CSS3
-- JavaScript
-- GitHub Pages
+* HTML5
+* CSS3
+* JavaScript
+* GitHub Pages
 
 ---
 
@@ -41,44 +41,60 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/hvssanraza/Convert-On-Go.git
+```
 
 Open the project folder:
 
+```bash
 cd Convert-On-Go
-
-Run locally by opening index.html in your browser.
-
 ```
 
-🌐 Live Demo
+Run locally by opening `index.html` in your browser.
+
+---
+
+## 🌐 Live Demo
 
 https://convertongo.com
 
-📈 Future Plans
-Support for more file formats
-Batch conversion
-Dark mode
-Improved conversion speed
-Browser-side/private processing
-Conversion history
-Better mobile optimization
-🤝 Contributing
+---
+
+## 📈 Future Plans
+
+* Support for more file formats
+* Batch conversion
+* Dark mode
+* Improved conversion speed
+* Browser-side/private processing
+* Conversion history
+* Better mobile optimization
+
+---
+
+## 🤝 Contributing
 
 Contributions, suggestions, and feature requests are welcome.
 
 Feel free to fork the repository and submit a pull request.
 
-📄 License
+---
+
+## 📄 License
 
 This project is licensed under the MIT License.
 
-👨‍💻 Developer
+---
+
+## 👨‍💻 Developer
 
 Made with ❤️ by Hassan Raza
 
 GitHub: https://github.com/hvssanraza
 Website: https://convertongo.com
 
-⭐ Support
+---
+
+## ⭐ Support
 
 If you like this project, consider starring the repository.
+
