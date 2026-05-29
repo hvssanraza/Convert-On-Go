@@ -48,6 +48,8 @@ cd Convert-On-Go
 
 Run locally by opening index.html in your browser.
 
+---
+
 🌐 Live Demo
 
 https://convertongo.com
