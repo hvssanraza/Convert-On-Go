@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Home -->
+  <!-- Homepage -->
   <url>
     <loc>https://convertongo.com/</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+
+  <!-- About -->
+  <url>
+    <loc>https://convertongo.com/about.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://convertongo.com/contact.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <!-- Privacy Policy -->
@@ -17,7 +33,7 @@
     <priority>0.5</priority>
   </url>
 
-  <!-- Terms -->
+  <!-- Terms & Conditions -->
   <url>
     <loc>https://convertongo.com/terms-and-conditions.html</loc>
     <lastmod>2026-05-29</lastmod>
