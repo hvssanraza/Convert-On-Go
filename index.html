@@ -2,25 +2,117 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
-  <title>Convert On Go — PDF & Word Converter</title>
-  <meta name="description" content="Convert PDF to Word and Word to PDF instantly in your browser. No uploads, no servers, 100% private and free." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  
+  <!-- Primary Meta Tags -->
+  <title>Convert On Go — Free PDF to Word & Word to PDF Converter | No Upload Needed</title>
+  <meta name="title" content="Convert On Go — Free PDF to Word & Word to PDF Converter | No Upload Needed" />
+  <meta name="description" content="Convert PDF to Word and Word to PDF instantly in your browser. 100% private, no file uploads, no servers. Free unlimited conversions with registration. Works offline after load." />
+  <meta name="keywords" content="PDF to Word converter, Word to PDF converter, free document converter, online PDF converter, browser-based converter, private file converter, no upload converter, convert PDF free, convert Word free, document conversion tool" />
+  <meta name="author" content="Convert On Go" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow" />
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://convertongo.com/" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://convertongo.com/" />
+  <meta property="og:title" content="Convert On Go — Free PDF to Word & Word to PDF Converter" />
+  <meta property="og:description" content="Convert PDF to Word and Word to PDF instantly in your browser. 100% private, no file uploads, no servers. Your files never leave your device." />
+  <meta property="og:image" content="https://convertongo.com/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Convert On Go - PDF & Word Converter Interface" />
+  <meta property="og:site_name" content="Convert On Go" />
+  <meta property="og:locale" content="en_US" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://convertongo.com/" />
+  <meta property="twitter:title" content="Convert On Go — Free PDF to Word & Word to PDF Converter" />
+  <meta property="twitter:description" content="Convert PDF to Word and Word to PDF instantly in your browser. 100% private, no file uploads, no servers." />
+  <meta property="twitter:image" content="https://convertongo.com/og-image.jpg" />
+  <meta name="twitter:creator" content="@convertongo" />
+  
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Convert On Go",
+    "url": "https://convertongo.com",
+    "description": "Free browser-based PDF to Word and Word to PDF converter. 100% private with no file uploads.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Convert On Go"
+    },
+    "browserRequirements": "Requires modern browser with JavaScript enabled"
+  }
+  </script>
+  
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Are my files actually private when using Convert On Go?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, completely. Convert On Go processes everything inside your browser using JavaScript libraries. Your files are never sent to any server. We do not have the ability to access your documents."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the file size limit for conversion?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Files up to 50 MB are supported. Larger files may take longer to process depending on your device's CPU speed, since all work is done locally."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Convert On Go really free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! Convert On Go offers 5 free conversions without registration. Register with your email (free) for unlimited conversions. No credit card required, no hidden fees."
+        }
+      }
+    ]
+  }
+  </script>
 
   <!-- Professional SVG Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f1629'/%3E%3Cpath d='M7 8h10l5 5v11H7z' fill='none' stroke='%235c6fff' stroke-width='1.5' stroke-linejoin='round'/%3E%3Cpath d='M17 8v5h5' fill='none' stroke='%235c6fff' stroke-width='1.5' stroke-linecap='round'/%3E%3Cpath d='M20 19l3 3-3 3' fill='none' stroke='%2334d399' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M23 22h-5' fill='none' stroke='%2334d399' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="theme-color" content="#07090f" />
+  <meta name="msapplication-TileColor" content="#4f6ef7" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
 
+  <!-- Preload critical assets -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" as="script" />
+  
   <!-- GSAP core only -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <!-- Libraries -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
-  <!-- Using docx from CDN with proper global -->
   <script src="https://unpkg.com/docx@8.2.2/build/index.umd.js"></script>
 
   <style>
@@ -66,6 +158,13 @@
     .orb-1{width:700px;height:700px;background:rgba(79,110,247,0.14);top:-250px;left:-200px}
     .orb-2{width:550px;height:550px;background:rgba(247,95,138,0.09);bottom:-200px;right:-180px}
     .orb-3{width:350px;height:350px;background:rgba(45,212,160,0.06);top:50%;left:55%;transform:translate(-50%,-50%)}
+
+    /* ─── Skip to main content ─── */
+    .skip-link {
+      position: absolute; top: -100px; left: 0; background: var(--accent);
+      color: #fff; padding: 8px 16px; z-index: 1000; transition: top 0.3s;
+    }
+    .skip-link:focus { top: 0; }
 
     /* ─── Layout ─── */
     .page{position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:0 28px}
@@ -519,6 +618,7 @@
       box-shadow:0 6px 22px rgba(79,110,247,0.38);transition:all 0.25s;
     }
     .modal-submit:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(79,110,247,0.5)}
+    .modal-submit:disabled{opacity:0.6;cursor:not-allowed;transform:none}
     .modal-note{font-size:0.75rem;color:var(--text3);text-align:center;margin-top:12px}
 
     /* ─── Toast ─── */
@@ -549,17 +649,20 @@
 </head>
 <body>
 
+<!-- Skip navigation link -->
+<a href="#mainCard" class="skip-link">Skip to converter</a>
+
 <!-- Background -->
 <div class="orb orb-1"></div>
 <div class="orb orb-2"></div>
 <div class="orb orb-3"></div>
 
 <!-- ─── Header ─── -->
-<header id="siteHeader">
-  <div class="nav-inner">
-    <a href="#" class="logo">
+<header id="siteHeader" role="banner">
+  <nav class="nav-inner" aria-label="Main navigation">
+    <a href="#" class="logo" aria-label="Convert On Go Home">
       <div class="logo-icon">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
           <line x1="9" y1="15" x2="15" y2="15"/><line x1="9" y1="11" x2="15" y2="11"/>
         </svg>
@@ -567,17 +670,17 @@
       Convert On Go
     </a>
     <div class="nav-right" id="navRight">
-      <span class="nav-pill">100% Browser-Side</span>
-      <button class="btn-register-nav" id="navRegisterBtn" onclick="openModal()">Register Free</button>
+      <span class="nav-pill" aria-label="Privacy feature">100% Browser-Side</span>
+      <button class="btn-register-nav" id="navRegisterBtn" onclick="openModal()" aria-label="Register for free account">Register Free</button>
     </div>
-  </div>
+  </nav>
 </header>
 
-<!-- ─── Hero ─── -->
+<main role="main">
 <div class="page">
-  <section class="hero">
+  <section class="hero" aria-labelledby="heroH1">
     <div class="hero-tag" id="heroTag">
-      <span class="hero-tag-dot"></span>
+      <span class="hero-tag-dot" aria-hidden="true"></span>
       Free Document Converter
     </div>
     <h1 id="heroH1">Convert <em>PDF &amp; Word</em><br/>files in seconds</h1>
@@ -602,14 +705,14 @@
   </section>
 
   <!-- ─── Usage Banner ─── -->
-  <div class="usage-banner" id="usageBanner">
-    <div class="usage-icon">
+  <div class="usage-banner" id="usageBanner" role="status" aria-live="polite">
+    <div class="usage-icon" aria-hidden="true">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f5c542" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
     </div>
     <div class="usage-text">
       <strong>Free tier: <span id="usedCount">0</span> / 5 conversions used</strong>
       <p>Register with your email for unlimited conversions</p>
-      <div class="usage-pips" id="usagePips">
+      <div class="usage-pips" id="usagePips" aria-label="Conversion usage indicator">
         <div class="pip" data-i="0"></div>
         <div class="pip" data-i="1"></div>
         <div class="pip" data-i="2"></div>
@@ -617,29 +720,29 @@
         <div class="pip" data-i="4"></div>
       </div>
     </div>
-    <button class="btn-unlock" onclick="openModal()">Unlock Unlimited</button>
+    <button class="btn-unlock" onclick="openModal()" aria-label="Unlock unlimited conversions">Unlock Unlimited</button>
   </div>
 
   <!-- ─── Mode Toggle ─── -->
-  <div class="toggle-wrap" id="toggleWrap">
+  <div class="toggle-wrap" id="toggleWrap" role="tablist" aria-label="Conversion mode">
     <div class="mode-toggle" style="position:relative">
-      <div class="mode-slider" id="modeSlider"></div>
-      <button class="mode-btn active" id="btnP2W" onclick="setMode('pdf-to-word')">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+      <div class="mode-slider" id="modeSlider" aria-hidden="true"></div>
+      <button class="mode-btn active" id="btnP2W" onclick="setMode('pdf-to-word')" role="tab" aria-selected="true" aria-controls="converterPanel">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
         PDF → Word
       </button>
-      <button class="mode-btn" id="btnW2P" onclick="setMode('word-to-pdf')">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+      <button class="mode-btn" id="btnW2P" onclick="setMode('word-to-pdf')" role="tab" aria-selected="false" aria-controls="converterPanel">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
         Word → PDF
       </button>
     </div>
   </div>
 
   <!-- ─── Main Card ─── -->
-  <div class="main-card" id="mainCard">
+  <div class="main-card" id="mainCard" role="region" aria-label="File converter" id="converterPanel">
     <!-- Drop Zone -->
-    <div class="drop-zone" id="dropZone" onclick="document.getElementById('fileInput').click()">
-      <div class="dz-icon">
+    <div class="drop-zone" id="dropZone" onclick="document.getElementById('fileInput').click()" role="button" tabindex="0" aria-label="Upload file for conversion" onkeydown="if(event.key==='Enter'||event.key===' ')this.click()">
+      <div class="dz-icon" aria-hidden="true">
         <svg viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="8" y="10" width="34" height="42" rx="5" fill="rgba(79,110,247,0.12)" stroke="rgba(79,110,247,0.4)" stroke-width="1.4"/>
           <rect x="22" y="6" width="34" height="42" rx="5" fill="rgba(79,110,247,0.07)" stroke="rgba(79,110,247,0.25)" stroke-width="1.4"/>
@@ -655,28 +758,28 @@
         <span class="fmt-tag">Up to 50 MB</span>
       </div>
     </div>
-    <input type="file" id="fileInput" accept=".pdf"/>
+    <input type="file" id="fileInput" accept=".pdf" aria-label="Choose file to convert"/>
 
     <!-- File info -->
     <div class="file-info" id="fileInfo">
-      <div class="fi-icon" id="fiIcon">
+      <div class="fi-icon" id="fiIcon" aria-hidden="true">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f6ef7" stroke-width="1.8" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
       </div>
       <div class="fi-details">
         <div class="fi-name" id="fiName">—</div>
         <div class="fi-size" id="fiSize">—</div>
       </div>
-      <button class="fi-remove" onclick="clearFile()">✕ Remove</button>
+      <button class="fi-remove" onclick="clearFile()" aria-label="Remove selected file">✕ Remove</button>
     </div>
 
     <!-- Error -->
-    <div class="err-msg" id="errMsg">
-      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+    <div class="err-msg" id="errMsg" role="alert">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
       <span id="errText">Something went wrong.</span>
     </div>
 
     <!-- Progress -->
-    <div class="prog-wrap" id="progWrap">
+    <div class="prog-wrap" id="progWrap" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
       <div class="prog-meta">
         <span id="progLabel">Converting…</span>
         <span id="progPct">0%</span>
@@ -685,73 +788,73 @@
     </div>
 
     <!-- Result -->
-    <div class="result-card" id="resultCard">
-      <div class="res-icon">
+    <div class="result-card" id="resultCard" role="status">
+      <div class="res-icon" aria-hidden="true">
         <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2dd4a0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
       </div>
       <div>
         <div class="res-title">Conversion Complete</div>
         <div class="res-sub" id="resSub">Your file is ready.</div>
       </div>
-      <button class="dl-btn" id="dlBtn">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      <button class="dl-btn" id="dlBtn" aria-label="Download converted file">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         Download
       </button>
     </div>
 
     <!-- Convert Button -->
-    <button class="conv-btn" id="convBtn" disabled onclick="startConvert()">
-      <div class="btn-shine" id="btnShine"></div>
+    <button class="conv-btn" id="convBtn" disabled onclick="startConvert()" aria-label="Start conversion">
+      <div class="btn-shine" id="btnShine" aria-hidden="true"></div>
       <span id="convBtnText">Convert to Word (.docx)</span>
     </button>
     <p class="limit-notice" id="limitNotice">
-      <span id="remText">5 free conversions remaining</span> · <a onclick="openModal()">Register for unlimited</a>
+      <span id="remText">5 free conversions remaining</span> · <a onclick="openModal()" tabindex="0" role="button">Register for unlimited</a>
     </p>
 
   </div><!-- /main-card -->
 
   <!-- ─── Features ─── -->
-  <section class="section" id="featSection">
+  <section class="section" id="featSection" aria-labelledby="featuresTitle">
     <p class="section-label">Why Convert On Go</p>
-    <h2 class="section-title">Everything you need,<br/>nothing you don't</h2>
+    <h2 class="section-title" id="featuresTitle">Everything you need,<br/>nothing you don't</h2>
     <div class="feat-grid">
       <div class="feat-card" data-anim>
-        <div class="feat-ic">
+        <div class="feat-ic" aria-hidden="true">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f6ef7" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
         </div>
         <h3>Zero Data Exposure</h3>
         <p>All conversion happens inside your browser using WebAssembly-powered libraries. No file ever leaves your device or touches a server.</p>
       </div>
       <div class="feat-card" data-anim>
-        <div class="feat-ic">
+        <div class="feat-ic" aria-hidden="true">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f6ef7" stroke-width="1.8" stroke-linecap="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
         </div>
         <h3>Instant Processing</h3>
         <p>No upload queues, no server wait times. Conversions run on your local CPU, finishing in moments regardless of your internet speed.</p>
       </div>
       <div class="feat-card" data-anim>
-        <div class="feat-ic">
+        <div class="feat-ic" aria-hidden="true">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f6ef7" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
         </div>
         <h3>Completely Free</h3>
         <p>5 conversions free forever, no credit card needed. Register with your email to unlock unlimited conversions at no cost.</p>
       </div>
       <div class="feat-card" data-anim>
-        <div class="feat-ic">
+        <div class="feat-ic" aria-hidden="true">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f6ef7" stroke-width="1.8" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
         <h3>GDPR Compliant</h3>
         <p>We collect no personal data without consent, store no files, and log no document contents. Full compliance by design.</p>
       </div>
       <div class="feat-card" data-anim>
-        <div class="feat-ic">
+        <div class="feat-ic" aria-hidden="true">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f6ef7" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
         </div>
         <h3>Works Everywhere</h3>
         <p>No installation, no plugins, no extensions. Runs in any modern browser on Windows, macOS, Linux, iOS, and Android.</p>
       </div>
       <div class="feat-card" data-anim>
-        <div class="feat-ic">
+        <div class="feat-ic" aria-hidden="true">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f6ef7" stroke-width="1.8" stroke-linecap="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
         </div>
         <h3>Open Standards</h3>
@@ -761,22 +864,22 @@
   </section>
 
   <!-- ─── How It Works ─── -->
-  <section class="section" id="howSection">
+  <section class="section" id="howSection" aria-labelledby="howTitle">
     <p class="section-label">How It Works</p>
-    <h2 class="section-title">Three steps to a<br/>converted document</h2>
+    <h2 class="section-title" id="howTitle">Three steps to a<br/>converted document</h2>
     <div class="steps">
       <div class="step" data-anim>
-        <div class="step-num">01</div>
+        <div class="step-num" aria-hidden="true">01</div>
         <h4>Select your file</h4>
         <p>Drag and drop your PDF or Word document into the converter, or click to browse and select from your device. Files up to 50 MB are supported.</p>
       </div>
       <div class="step" data-anim>
-        <div class="step-num">02</div>
+        <div class="step-num" aria-hidden="true">02</div>
         <h4>Instant conversion</h4>
         <p>Your browser extracts text and structure from the source file using local libraries, then rebuilds it in the target format — all offline, all private.</p>
       </div>
       <div class="step" data-anim>
-        <div class="step-num">03</div>
+        <div class="step-num" aria-hidden="true">03</div>
         <h4>Download &amp; use</h4>
         <p>Click download to save your converted file directly to your device. The original is never modified, and the output stays in your hands.</p>
       </div>
@@ -784,16 +887,16 @@
   </section>
 
   <!-- ─── Plans ─── -->
-  <section class="section" id="plansSection">
+  <section class="section" id="plansSection" aria-labelledby="plansTitle">
     <p class="section-label">Pricing</p>
-    <h2 class="section-title">Simple, honest pricing</h2>
+    <h2 class="section-title" id="plansTitle">Simple, honest pricing</h2>
     <p class="section-body">No hidden fees. No watermarks. No subscriptions. Convert On Go is free for everyday use — register your email to remove the 5-conversion limit.</p>
     <div class="plans-grid">
       <div class="plan-card" data-anim>
         <div class="plan-name">Guest</div>
         <div class="plan-price">Free <sub>forever</sub></div>
         <div class="plan-desc">No account needed</div>
-        <ul class="plan-features">
+        <ul class="plan-features" aria-label="Guest plan features">
           <li>5 conversions per session</li>
           <li>PDF → Word (.docx)</li>
           <li>Word → PDF</li>
@@ -807,7 +910,7 @@
         <div class="plan-name">Registered</div>
         <div class="plan-price">Free <sub>forever</sub></div>
         <div class="plan-desc">Email registration, no card required</div>
-        <ul class="plan-features">
+        <ul class="plan-features" aria-label="Registered plan features">
           <li>Unlimited conversions</li>
           <li>PDF → Word (.docx)</li>
           <li>Word → PDF</li>
@@ -821,42 +924,42 @@
   </section>
 
   <!-- ─── FAQ ─── -->
-  <section class="section" id="faqSection">
+  <section class="section" id="faqSection" aria-labelledby="faqTitle">
     <p class="section-label">FAQ</p>
-    <h2 class="section-title">Common questions</h2>
-    <div class="faq-list" id="faqList">
-      <div class="faq-item" data-anim>
-        <button class="faq-q" onclick="toggleFaq(this)">
+    <h2 class="section-title" id="faqTitle">Common questions</h2>
+    <div class="faq-list" id="faqList" role="list">
+      <div class="faq-item" data-anim role="listitem">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
           Are my files actually private?
-          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
         </button>
         <div class="faq-a">Yes, completely. Convert On Go processes everything inside your browser using JavaScript libraries. Your files are never sent to any server. We do not have the ability to access your documents even if we wanted to.</div>
       </div>
-      <div class="faq-item" data-anim>
-        <button class="faq-q" onclick="toggleFaq(this)">
+      <div class="faq-item" data-anim role="listitem">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
           What is the file size limit?
-          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
         </button>
         <div class="faq-a">Files up to 50 MB are supported. Larger files may take longer to process depending on your device's CPU speed, since all work is done locally. Most business documents are well under this limit.</div>
       </div>
-      <div class="faq-item" data-anim>
-        <button class="faq-q" onclick="toggleFaq(this)">
+      <div class="faq-item" data-anim role="listitem">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
           Will formatting be preserved in conversion?
-          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
         </button>
         <div class="faq-a">Text content, headings, paragraphs, and basic formatting are preserved. Complex layouts involving embedded images, multi-column designs, or advanced table structures may not convert with perfect fidelity — this is an inherent limitation of browser-based conversion.</div>
       </div>
-      <div class="faq-item" data-anim>
-        <button class="faq-q" onclick="toggleFaq(this)">
+      <div class="faq-item" data-anim role="listitem">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
           Why register? What do I get?
-          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
         </button>
         <div class="faq-a">Registered users have the per-session conversion limit removed entirely. Registration is free, requires only your email address, and unlocks unlimited conversions for as long as the service runs. We'll never spam you or share your email.</div>
       </div>
-      <div class="faq-item" data-anim>
-        <button class="faq-q" onclick="toggleFaq(this)">
+      <div class="faq-item" data-anim role="listitem">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
           Does this work offline?
-          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
         </button>
         <div class="faq-a">Once the page has loaded, the conversion itself works without an internet connection. However, initial page load requires network access to download the conversion libraries from CDN. After the first visit, most browsers cache these assets.</div>
       </div>
@@ -864,23 +967,24 @@
   </section>
 
 </div><!-- /page -->
+</main>
 
 <!-- ─── Footer ─── -->
-<footer>
+<footer role="contentinfo">
   <div class="footer-inner">
     <div class="footer-logo">
-      <div class="logo-icon" style="width:26px;height:26px;border-radius:7px">
+      <div class="logo-icon" style="width:26px;height:26px;border-radius:7px" aria-hidden="true">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
       </div>
       Convert On Go
     </div>
-    <div class="footer-links">
+    <nav class="footer-links" aria-label="Footer navigation">
       <a href="#featSection">Features</a>
       <a href="#howSection">How it works</a>
       <a href="#plansSection">Pricing</a>
       <a href="#faqSection">FAQ</a>
       <a href="#" onclick="openModal()">Register</a>
-    </div>
+    </nav>
     <div class="footer-right">
       © 2025 Convert On Go · All processing is local<br/>
       Built with pdf-lib · mammoth.js · docx.js
@@ -889,34 +993,47 @@
 </footer>
 
 <!-- ─── Register Modal ─── -->
-<div class="modal-overlay" id="modal" onclick="if(event.target===this)closeModal()">
+<div class="modal-overlay" id="modal" onclick="if(event.target===this)closeModal()" role="dialog" aria-labelledby="modalTitle" aria-modal="true">
   <div class="modal-box">
-    <button class="modal-close" onclick="closeModal()">✕</button>
-    <div class="modal-icon">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close registration form">✕</button>
+    <div class="modal-icon" aria-hidden="true">
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
     </div>
-    <div class="modal-title">Unlock unlimited conversions</div>
+    <div class="modal-title" id="modalTitle">Unlock unlimited conversions</div>
     <div class="modal-sub">Register with your email for free. No credit card, no subscription, no spam — ever.</div>
     <div class="modal-perks">
-      <div class="perk"><div class="perk-dot"></div>Unlimited PDF ↔ Word conversions</div>
-      <div class="perk"><div class="perk-dot"></div>Priority processing (no queue)</div>
-      <div class="perk"><div class="perk-dot"></div>Early access to new features</div>
-      <div class="perk"><div class="perk-dot"></div>Your data is never stored or shared</div>
+      <div class="perk"><div class="perk-dot" aria-hidden="true"></div>Unlimited PDF ↔ Word conversions</div>
+      <div class="perk"><div class="perk-dot" aria-hidden="true"></div>Priority processing (no queue)</div>
+      <div class="perk"><div class="perk-dot" aria-hidden="true"></div>Early access to new features</div>
+      <div class="perk"><div class="perk-dot" aria-hidden="true"></div>Your data is never stored or shared</div>
     </div>
-    <div>
-      <label for="regName">Full name</label>
-      <input type="text" id="regName" placeholder="Jane Smith"/>
-      <label for="regEmail">Email address</label>
-      <input type="email" id="regEmail" placeholder="jane@example.com"/>
-    </div>
-    <button class="modal-submit" onclick="handleRegister()">Create free account</button>
+    
+    <!-- Formspree Integration -->
+    <form id="registerForm" action="https://formspree.io/f/mdajbqvb" method="POST">
+      <div>
+        <label for="regName">Full name</label>
+        <input type="text" id="regName" name="name" placeholder="Jane Smith" required aria-required="true"/>
+      </div>
+      <div>
+        <label for="regEmail">Email address</label>
+        <input type="email" id="regEmail" name="email" placeholder="jane@example.com" required aria-required="true"/>
+      </div>
+      <!-- Anti-spam honeypot -->
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+      <!-- Custom subject for Formspree -->
+      <input type="hidden" name="_subject" value="New Registration - Convert On Go" />
+      
+      <button type="submit" class="modal-submit" id="modalSubmitBtn">
+        Create free account
+      </button>
+    </form>
     <p class="modal-note">By registering you agree to our Terms of Service and Privacy Policy.<br/>We will never sell or share your information.</p>
   </div>
 </div>
 
 <!-- ─── Toast ─── -->
-<div class="toast" id="toast">
-  <div class="toast-dot"></div>
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <div class="toast-dot" aria-hidden="true"></div>
   <span id="toastText">Registered successfully!</span>
 </div>
 
@@ -925,6 +1042,7 @@
      STATE
   ══════════════════════════════════════ */
   const FREE_LIMIT = 5;
+  const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mdajbqvb';
   let usedCount = parseInt(localStorage.getItem('cog_used') || '0');
   let isRegistered = localStorage.getItem('cog_registered') === '1';
   let registeredName = localStorage.getItem('cog_name') || '';
@@ -948,6 +1066,12 @@
     updateUsageUI();
     updateNavUI();
     animateCounter();
+    
+    // Attach form submit handler
+    const form = document.getElementById('registerForm');
+    if (form) {
+      form.addEventListener('submit', handleRegister);
+    }
   });
 
   function updateNavUI() {
@@ -957,14 +1081,14 @@
       navRight.innerHTML = `
         <span class="nav-pill">100% Browser-Side</span>
         <span class="user-greeting">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
           ${registeredName.split(' ')[0]}
         </span>
       `;
     } else {
       navRight.innerHTML = `
         <span class="nav-pill">100% Browser-Side</span>
-        <button class="btn-register-nav" id="navRegisterBtn" onclick="openModal()">Register Free</button>
+        <button class="btn-register-nav" id="navRegisterBtn" onclick="openModal()" aria-label="Register for free account">Register Free</button>
       `;
     }
   }
@@ -1021,10 +1145,21 @@
   function openModal() {
     const modal = document.getElementById('modal');
     if (modal) {
+      // Reset form
+      const form = document.getElementById('registerForm');
+      if (form) form.reset();
+      const submitBtn = document.getElementById('modalSubmitBtn');
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Create free account';
+      }
       modal.classList.add('open');
       document.body.style.overflow = 'hidden';
+      // Focus first input
+      setTimeout(() => document.getElementById('regName')?.focus(), 100);
     }
   }
+  
   function closeModal() {
     const modal = document.getElementById('modal');
     if (modal) {
@@ -1032,12 +1167,20 @@
       document.body.style.overflow = '';
     }
   }
-  function handleRegister() {
+  
+  async function handleRegister(event) {
+    if (event) event.preventDefault();
+    
     const nameInput = document.getElementById('regName');
     const emailInput = document.getElementById('regEmail');
+    const submitBtn = document.getElementById('modalSubmitBtn');
+    
     if (!nameInput || !emailInput) return;
+    
     const name = nameInput.value.trim();
     const email = emailInput.value.trim();
+    
+    // Client-side validation
     if (!name || !email || !email.includes('@')) {
       const modalBox = document.querySelector('#modal .modal-box');
       if (modalBox) {
@@ -1045,16 +1188,61 @@
       }
       return;
     }
-    localStorage.setItem('cog_registered', '1');
-    localStorage.setItem('cog_name', name);
-    isRegistered = true;
-    registeredName = name;
-    closeModal();
-    showToast('Welcome, ' + name.split(' ')[0] + '! Unlimited conversions unlocked.');
-    updateUsageUI();
-    updateNavUI();
-    const limitNotice = document.getElementById('limitNotice');
-    if (limitNotice) gsap.from(limitNotice, { opacity: 0, y: 5, duration: 0.4 });
+    
+    // Disable button during submission
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Registering...';
+    }
+    
+    try {
+      // Send to Formspree
+      const formData = new FormData();
+      formData.append('name', name);
+      formData.append('email', email);
+      
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+      
+      if (response.ok) {
+        // Store locally
+        localStorage.setItem('cog_registered', '1');
+        localStorage.setItem('cog_name', name);
+        localStorage.setItem('cog_email', email);
+        localStorage.setItem('cog_registered_date', new Date().toISOString());
+        
+        const userData = {
+          name: name,
+          email: email,
+          registeredAt: new Date().toISOString()
+        };
+        localStorage.setItem('cog_user_data', JSON.stringify(userData));
+        
+        isRegistered = true;
+        registeredName = name;
+        closeModal();
+        showToast('Welcome, ' + name.split(' ')[0] + '! Unlimited conversions unlocked.');
+        updateUsageUI();
+        updateNavUI();
+        
+        const limitNotice = document.getElementById('limitNotice');
+        if (limitNotice) gsap.from(limitNotice, { opacity: 0, y: 5, duration: 0.4 });
+      } else {
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.error || 'Submission failed');
+      }
+    } catch (error) {
+      console.error('Registration error:', error);
+      showToast('Unable to register. Please check your connection and try again.');
+    } finally {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Create free account';
+      }
+    }
   }
 
   /* ══════════════════════════════════════
@@ -1076,8 +1264,14 @@
     const item = btn.closest('.faq-item');
     if (!item) return;
     const wasOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
-    if (!wasOpen) item.classList.add('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.faq-q')?.setAttribute('aria-expanded', 'false');
+    });
+    if (!wasOpen) {
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+    }
   }
 
   /* ══════════════════════════════════════
@@ -1091,6 +1285,8 @@
     if (!sl || !b1 || !b2) return;
     if (mode === 'pdf-to-word') {
       b1.classList.add('active'); b2.classList.remove('active');
+      b1.setAttribute('aria-selected', 'true');
+      b2.setAttribute('aria-selected', 'false');
       gsap.to(sl, { x: 0, width: b1.offsetWidth, duration: 0.42, ease: 'back.out(1.6)' });
       const fileInput = document.getElementById('fileInput');
       if (fileInput) fileInput.accept = '.pdf';
@@ -1104,6 +1300,8 @@
       if (convBtnText) convBtnText.textContent = 'Convert to Word (.docx)';
     } else {
       b2.classList.add('active'); b1.classList.remove('active');
+      b2.setAttribute('aria-selected', 'true');
+      b1.setAttribute('aria-selected', 'false');
       gsap.to(sl, { x: b1.offsetWidth, width: b2.offsetWidth, duration: 0.42, ease: 'back.out(1.6)' });
       const fileInput = document.getElementById('fileInput');
       if (fileInput) fileInput.accept = '.docx,.doc';
@@ -1158,6 +1356,7 @@
       gsap.from(convBtn, { scale: 0.97, duration: 0.3, ease: 'back.out(2)' });
     }
   }
+  
   function clearFile() {
     selectedFile = null; convertedBlob = null;
     const fileInfo = document.getElementById('fileInfo');
@@ -1168,6 +1367,7 @@
     if (convBtn) convBtn.disabled = true;
     hideAll();
   }
+  
   function hideAll() {
     const progWrap = document.getElementById('progWrap');
     const resultCard = document.getElementById('resultCard');
@@ -1176,6 +1376,7 @@
     if (resultCard) resultCard.classList.remove('show');
     if (errMsg) errMsg.classList.remove('show');
   }
+  
   function fmtSize(b) {
     if (b < 1024) return b + ' B';
     if (b < 1048576) return (b/1024).toFixed(1) + ' KB';
@@ -1189,9 +1390,11 @@
     const progFill = document.getElementById('progFill');
     const progPct = document.getElementById('progPct');
     const progLabel = document.getElementById('progLabel');
+    const progWrap = document.getElementById('progWrap');
     if (progFill) progFill.style.width = pct + '%';
     if (progPct) progPct.textContent = pct + '%';
     if (label && progLabel) progLabel.textContent = label;
+    if (progWrap) progWrap.setAttribute('aria-valuenow', pct);
   }
 
   /* ══════════════════════════════════════
@@ -1263,7 +1466,7 @@
   }
 
   /* ══════════════════════════════════════
-     PDF → DOCX (FIXED with docx UMD)
+     PDF → DOCX
   ══════════════════════════════════════ */
   async function convertPdfToDocx(file) {
     setProgress(10, 'Reading PDF…'); await delay(120);
@@ -1424,7 +1627,7 @@
   function delay(ms) { return new Promise(r => setTimeout(r, ms)); }
 
   /* ══════════════════════════════════════
-     GSAP ENTRANCE
+     GSAP ENTRANCE ANIMATIONS
   ══════════════════════════════════════ */
   const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
   tl.from('#siteHeader', { opacity: 0, y: -16, duration: 0.7 })
@@ -1443,6 +1646,7 @@
     .to('#mainCard', { opacity: 1, y: 0, duration: 0.6 }, 1.05)
     .from('#mainCard', { y: 24 }, 1.05);
 
+  // Intersection Observer for scroll animations
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -1460,6 +1664,7 @@
     observer.observe(el);
   });
 
+  // Button shine animation
   const btnShine = document.getElementById('btnShine');
   if (btnShine) {
     gsap.to(btnShine, { left: '150%', duration: 1.8, ease: 'power2.inOut', repeat: -1, repeatDelay: 3.5 });
